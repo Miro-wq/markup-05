@@ -156,7 +156,7 @@ body {
   font-weight: 500;
   position: relative;
 }
-
+/* active underline start */
 .portfolio.active::after,
 .portfolio.current::after {
   content: "";
@@ -186,7 +186,7 @@ body {
   transform: translateX(-50%);
   border-radius: 3px;
 }
-
+/* active underline end */
 .address ul li a {
   color: var(--accent-color-description);
   font-weight: 400;
@@ -234,6 +234,7 @@ ul {
 /*---------------------------------------------------------*/
 
 /*--stilizare sectiuni imagini rand 1, 2 si 3 --*/
+/* transition blue background start */
 .image-container {
   position: relative;
   overflow: hidden;
@@ -272,6 +273,7 @@ ul {
   font-size: 16px;
   line-height: 24px;
 }
+/* transition blue background end */
 
 .row-1,
 .row-2,
@@ -338,6 +340,7 @@ ul {
 .card9:hover {
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  cursor: pointer;
 }
 /*---------------------------------------------------------*/
 

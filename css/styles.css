@@ -16,6 +16,8 @@
   --icon-background: #4d5ae5;
   --icons-color: #f4f4fd;
   --icons-color-hover: #404bbf;
+  --modal-background-btn-color: #e7e9fc;
+  --modal-btn-color: #2e2f42;
 }
 
 body,
@@ -104,10 +106,9 @@ body {
   background-color: var(--primary-color);
   border-bottom: 1px solid #e7e9fc;
   position: sticky;
-  z-index: 10;
+  z-index: 6;
   top: 0;
   width: 100%;
-  z-index: 999;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
@@ -171,7 +172,7 @@ body {
   font-weight: 500;
   position: relative;
 }
-
+/* active underline start */
 .index.active::after,
 .index.current::after {
   content: "";
@@ -201,6 +202,7 @@ body {
   transform: translateX(-50%);
   border-radius: 3px;
 }
+/*  active underline end */
 
 .address ul li a {
   color: var(--accent-color-description);
@@ -237,6 +239,8 @@ body {
 }
 
 .hero .order-service-btn {
+  font-weight: 500;
+  letter-spacing: 4%;
   z-index: 2;
   background-color: var(--accent-color-iris);
   cursor: pointer;
@@ -245,16 +249,13 @@ body {
   width: 169px;
   height: 56px;
   border-radius: 4px;
-  margin-top: 48px;
+  margin-top: 64px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
 }
 
+.hero button:focus,
 .hero button:hover {
   background-color: var(--button-color-filters);
-}
-
-.hero button:active {
-  background-color: var(--accent-color-iris);
 }
 /*---------------------------------------------------------*/
 
@@ -629,7 +630,7 @@ footer a {
 .footer-icons .social-links:focus {
   background-color: var(--green-new-color);
 }
-
+/* modal style start */
 .is-hidden {
   visibility: hidden;
 }
@@ -638,10 +639,13 @@ footer a {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--navy-blue-modal);
+  z-index: 8;
 }
 
 .modal-content {
@@ -654,17 +658,23 @@ footer a {
   border-radius: 4px;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 1px 1px 0 rgba(0, 0, 0, 0.14);
-  margin-top: 80px;
+  margin-top: 8px;
 }
 
 .close-btn {
-  background-color: gray;
+  background-color: var(--modal-background-btn-color);
   border-radius: 50%;
   position: absolute;
-  color: #fff;
+  color: var(--modal-btn-color);
   top: 24px;
   right: 24px;
   outline: none;
-  border-color: gray;
+  border: 1px solid #4b494a3b;
 }
+
+.close-btn:hover {
+  background-color: var(--button-color-filters);
+  color: white;
+}
+/* modal style  end */
 /*------------------------end---------------------------------*/
