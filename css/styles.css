@@ -8,7 +8,7 @@
   --accent-color-cloud: #f4f4fd;
   --green-new-color: #31d0aa;
   --grey-new-color: #8e8f99;
-  --white-new-color: #fcfcfc;
+  --modal-background-color: #fcfcfc;
   --navy-blue-modal: rgba(46, 47, 66, 0.4);
   --grey: rgba(46, 47, 66, 0.7);
   --font-family: "Roboto", sans-serif;
@@ -639,7 +639,6 @@ footer a {
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -648,10 +647,14 @@ footer a {
 .modal-content {
   margin: 0 auto;
   padding: 24px;
-  background-color: #fcfcfc;
-  width: 50%;
-  height: 500px;
+  background-color: var(--modal-background-color);
+  width: 408px;
+  height: 584px;
   position: relative;
+  border-radius: 4px;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 1px 1px 0 rgba(0, 0, 0, 0.14);
+  margin-top: 80px;
 }
 
 .close-btn {
