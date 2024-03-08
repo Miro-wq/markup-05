@@ -72,7 +72,6 @@ body {
   letter-spacing: 0.02em;
   margin: 0 auto;
   padding: 0;
-  width: 1440px;
 }
 /*---------------------------------------------------------*/
 
@@ -169,22 +168,11 @@ body {
   border-radius: 3px;
 }
 
-.index:hover::after,
-.portfolio:hover::after,
-.contacts:hover::after,
-.index:focus::after,
-.portfolio:focus:after,
-.contacts:focus::after {
-  content: "";
-  position: absolute;
-  width: calc(100% - 1px);
-  height: 4px;
-  background-color: var(--button-color-filters);
-  bottom: -27px;
-  left: 50%;
-  transform: translateX(-50%);
-  border-radius: 3px;
-  transition: width var(--transitions);
+.index:focus,
+.portfolio:focus,
+.contacts:focus {
+  color: var(--button-color-filters);
+  transition: var(--transitions);
 }
 
 .address ul li a {

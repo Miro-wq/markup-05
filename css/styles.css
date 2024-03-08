@@ -99,7 +99,6 @@ body {
   letter-spacing: 0.02em;
   margin: 0 auto;
   padding: 0;
-  width: 1440px;
 }
 /*---------------------------------------------------------*/
 
@@ -182,7 +181,6 @@ body {
   position: relative;
 }
 
-/* active underline */
 .index.active::after,
 .index.current::after {
   content: "";
@@ -195,7 +193,6 @@ body {
   transform: translateX(-50%);
   border-radius: 3px;
 }
-/*  active underline end */
 
 .index:focus,
 .portfolio:focus,
@@ -641,6 +638,7 @@ footer a {
 .footer-icons .social-links:focus {
   background-color: var(--green-new-color);
 }
+
 /* modal style start */
 .is-hidden {
   visibility: hidden;
