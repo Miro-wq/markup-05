@@ -211,7 +211,7 @@ body {
   cursor: pointer;
   border: 1px solid var(--accent-color-filters);
 }
-.filters li button:focus,
+
 .filters li button:hover {
   color: var(--primary-color);
   background-color: var(--accent-color-iris);
@@ -219,7 +219,7 @@ body {
     0 3px 1px 0 rgba(0, 0, 0, 0.1);
   border: 1px solid transparent;
   transition: var(--transitions);
-  scale: 1.2;
+  scale: 1.1;
 }
 
 .filters li button:active {
